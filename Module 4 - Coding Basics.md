@@ -4,7 +4,7 @@ Strucs are user defined data types that allow the programmer to group related da
 A common occurrence one will see when working with windows API is that some APIs require populated structure as input, while others will take a declared structs and populate it. Hers and example of the `THREADENTRY32` struct:
 
 ```c
-typedef struct tagTHREADENTRY32 {
+typedef struct _tagTHREADENTRY32 {
   DWORD dwSize; // Member 1
   DWORD cntUsage; // Member 2
   DWORD th32ThreadID;
@@ -27,5 +27,7 @@ typedef struct _STRUCTURE_NAME {
 ```
 
 The `STRUCTURE_NAME` alias refers to the structure name, whereas `PSTRUCTURE_NAME` represents a pointer to that structure. Microsoft generally uses the `P` prefix to indicate a pointer type.
+
+
 
 
