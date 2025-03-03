@@ -15,4 +15,12 @@ typedef struct tagTHREADENTRY32 {
 ```
 
 ### Declaring a Struct
-Structs are declares using the `typedef`keyword to give
+Structures used in this course are generally declared with the use of `typedef` keyword to give a structure an alias. For example, the structure below is created with the name `_STRUCTURE_NAME` but `typedef` adds two other names, `STRUCTURE_NAME` and `*PSTRUCTURE_NAME`.
+
+```c
+typedef struct _STRUCTURE_NAME {
+
+  // structure elements
+
+} STRUCTURE_NAME, *PSTRUCTURE_NAME;
+```
