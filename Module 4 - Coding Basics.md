@@ -28,7 +28,18 @@ typedef struct _STRUCTURE_NAME {
 
 The `STRUCTURE_NAME` alias refers to the structure name, whereas `PSTRUCTURE_NAME` represents a pointer to that structure. Microsoft generally uses the `P` prefix to indicate a pointer type.
 
+### Initializing a Structure
+Initializing a structure will vary depending on whether one is initializing the actual structure type or a pointer to the structure. Continuing the previous example, initializing a structure is the same when using `_STRUCTURE_NAME` or `STRUCTURE_NAME`, as shown below.
 
+```c
+STRUCTURE_NAME    struct1 = { 0 };  // The '{ 0 }' part, is used to initialize all the elements of struct1 to zero
+// OR
+struct _STRUCTURE_NAME   struct2 = { 0 };  // The '{ 0 }' part, is used to initialize all the elements of struct2 to zero
+```
 
+This is different when initializing the structure pointer, `PSTRUCTURE_NAME`.
 
+```c
+PSTRUCTURE_NAME structpointer = NULL;
+```
 
