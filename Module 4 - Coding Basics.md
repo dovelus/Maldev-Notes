@@ -13,3 +13,6 @@ typedef struct tagTHREADENTRY32 {
   DWORD dwFlags;
 } THREADENTRY32; 
 ```
+
+### Declaring a Struct
+Structs are declares using the `typedef`keyword to give
