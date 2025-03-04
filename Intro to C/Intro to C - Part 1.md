@@ -40,8 +40,8 @@ INT main()
 
 ```
 
-[!info]
-> `ERROR_SUCCESS`
+> [!info]
+> `ERROR_SUCCESS` is the same as `0` for windows operating system this list is very extensive and cover almost all types of error windows has
 
 ---
 
