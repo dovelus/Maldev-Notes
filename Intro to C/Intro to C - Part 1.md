@@ -5,12 +5,38 @@ Windows allows the execution of windows x86 executable thanks to an emulation la
 The main difference is that windows introduces a list of custom **Datatypes** that are easy to identify cause they are all in CAPS to have the full list of type refer to this: [Windows Data Types List](https://learn.microsoft.com/en-us/windows/win32/winprog/windows-data-types) 
 To use widows data type is pretty straight forward for example this code:
 ```c
+#include <Windows.h>
+#include <stdio.h>
+
+
+int main()
+{
+    int baseClass;
+    unsigned int netClass = 770;
+    unsigned long long thirdClass = 0x870;
+
+    printf("Welcome to the workshop \n");
+
+    return 0;
+}
+```
+Will turn into this:
+```c
 
 ```
-
 
 > [!tip]
 > Any time a function has no input variable required to run inside the parentesis in the function declaration you can use `VOID`:
-> ```C
-```
 
+```c
+INT main(VOID) // USED VOID INSTEAD OF EMPTY ()
+{
+    int baseClass;
+    unsigned int netClass = 770;
+    unsigned long long thirdClass = 0x870;
+
+    printf("Welcome to the workshop \n");
+
+    return 0;
+}
+```
