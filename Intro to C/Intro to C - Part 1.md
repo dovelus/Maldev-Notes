@@ -22,8 +22,28 @@ int main()
 ```
 Will turn into this:
 ```c
+#include <Windows.h>
+#include <stdio.h>
+
+
+INT main()
+{
+    INT baseClass;
+    UINT netClass = 770;
+    ULONGLONG thirdClass = 0x870;
+
+    printf("Welcome to the workshop \n");
+
+    return ERROR_SUCCESS;
+}
+
 
 ```
+
+[!info]
+> `ERROR_SUCCESS`
+
+---
 
 > [!tip]
 > Any time a function has no input variable required to run inside the parentesis in the function declaration you can use `VOID`:
