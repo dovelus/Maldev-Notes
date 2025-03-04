@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intro to C/Intro to Visual Studio - Part 1.md",
+                "file": "Intro to C/Intro to C - Part 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Intro to Visual Studio - Part 1"
+              "title": "Intro to C - Part 1"
             }
           }
         ]
@@ -173,7 +173,7 @@
   "active": "961d7638abc8990f",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2025-03-03 17.57.12.excalidraw.md",
-    "Intro to C/Intro to Visual Studio - Part 1.md",
+    "Intro to C/Intro to C - Part 1.md",
     "Intro to C",
     "Module 4 - Coding Basics.md",
     "Excalidraw",
