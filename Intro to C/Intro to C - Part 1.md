@@ -40,10 +40,11 @@ INT main()
 
 ```
 
-
-
 > [!info]
 > `ERROR_SUCCESS` is the same as `0` for windows operating system this list is very extensive and cover almost all types of error windows has
+
+#### Why use this Datatypes and not the C native one ?
+The main reason is that Microsoft likes to sometime change it's header files, for example if the underline code changes and we didn't use the same Datatypes our code may break on some windows machines 
 
 ---
 
