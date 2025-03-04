@@ -62,3 +62,6 @@ INT main(VOID) // USED VOID INSTEAD OF EMPTY ()
 ```
 
 ---
+> [!warning]
+> When doing math operations its suggested to not mix and match fundamentally different Datatypes
+
