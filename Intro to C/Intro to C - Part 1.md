@@ -9,4 +9,8 @@ To use widows data type is pretty straight forward for example this code:
 ```
 
 
-TIP: any time a function has no input variable required to run inside the parentesis in the function declaration you can use `VOID`:
+> [!tip]
+> Any time a function has no input variable required to run inside the parentesis in the function declaration you can use `VOID`:
+> ```C
+```
+
