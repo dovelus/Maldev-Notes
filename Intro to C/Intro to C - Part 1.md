@@ -47,4 +47,18 @@ The main reason is that Microsoft likes to sometime change it's header files, fo
 ---
 
 > [!tip]
-> Any time a function has no input variable required to run inside the parentesis in the function declaration you can use `VOID`:
+> Any time a function has no input variable required to run inside the parentesis in the function declaration you can use `VOID`: 
+```c
+INT main(VOID) // USED VOID INSTEAD OF EMPTY ()
+{
+    int baseClass;
+    unsigned int netClass = 770;
+    unsigned long long thirdClass = 0x870;
+
+    printf("Welcome to the workshop \n");
+
+    return 0;
+}
+```
+
+---
