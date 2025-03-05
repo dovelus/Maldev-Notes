@@ -85,3 +85,7 @@ INT procInfo = 770;
 (770 >> 8) & 1;
 // This will return true if on the 8th postion the value is 1
 ```
+
+---
+> [!tip]
+> 	When writing a implant most attacker just insert the C2 ip inside the code, per se this is not a bad idea but we can make a forsentic analyst life more difficult if for example we use deciamal notation of an ip address, for example `127.0.0.1` is equal to `2130706433` and another example is the `localhost` hostname keyword that is represented as `0x7F000001` in HEX
