@@ -76,4 +76,12 @@ printf("bestClass >> 1: %d\n", bestClass >> 1); // 327
 ```
 
 This operation shifter the Bytes by one position to the right, but why use this ? 
-In windows some times processes 
+In windows some times processes, handles have a series of flags specified but how we can check if that flag is present ? With a bit shift operation hers a theorical example:
+
+```c
+// Lets imagine that the number 770 is a process informations
+INT procInfo = 770;
+// To check if for example a flag on a specific position that we know is related to some info we do this
+(770 >> 8) & 1;
+// This will return true if on the 8th postion the value is 1
+```
