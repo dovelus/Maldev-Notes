@@ -5,7 +5,7 @@ In windows the operating system a lot of time Check for flags to be set her the 
 #define ClearFlag( Flags, TheFlag )		( (Flags) &=  ~(TheFlag) ) //The ~ is used to clear a value in item passed
 ```
 
-Hers an example of usage in this case we simplay manipulate a number making it ODD or not:
+Hers an example of usage in this case we simply manipulate a number making it ODD or not:
 ```c
 UINT nextClass = 770;
 
