@@ -65,3 +65,15 @@ INT main(VOID) // USED VOID INSTEAD OF EMPTY ()
 > [!warning]
 > When doing math operations its suggested to not mix and match fundamentally different Datatypes
 
+### Bit wise operations use cases:
+A bit shift operation is the operation of sifting the bytes a of a variable hers an example:
+
+```c
+// BIT SHIFT
+// 0000 0010 1001 1110      // 670
+// 0000 0001 0100 0111      // 
+printf("bestClass >> 1: %d\n", bestClass >> 1); // 327
+```
+
+This operation shifter the Bytes by one position to the right, but why use this ? 
+In windows some times processes 
