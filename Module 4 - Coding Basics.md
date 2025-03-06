@@ -44,7 +44,7 @@ PSTRUCTURE_NAME structpointer = NULL;
 ```
 
 Full code example:
+
 ```embed-c
-PATH: Code\Intro\strucs.c
-TITLE: "Usage of Structs in"
+PATH: "vault://Code/Intro/strucs.c"
 ```
