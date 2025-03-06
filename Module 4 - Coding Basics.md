@@ -184,6 +184,54 @@ The right shift (`>>`) and left shift (`<<`) operators are used to shift the bit
 
 Shifting right discards the rightmost number of bits by the specified value and zero bits of the same amount are inserted into the left. For example, the image below shows `10100111` shifted right by `2`, to become `00101001`.
 
-
+![image](https://user-images.githubusercontent.com/111295429/233790472-9782abea-7104-4f8f-b927-5ee0e74e8424.png)
 
 On the other hand, shifting left discards the leftmost bits and the same number of zero bits are inserted from the right handside. For example, the image below shows `10100111` shifted left by `2`, to become `10011100`.
+
+![image](https://user-images.githubusercontent.com/111295429/233791839-6d230e61-7f27-43f3-95a2-dbd1ead75b6f.png)
+
+---
+
+## Passing By Value
+Passing by value is a method of passing arguments to a function where the argument is a copy of the object's value. This means that when an argument is passed by value, the value of the object is copied and the function can only modify its local copy of the object's value, not the original object itself.
+```c
+int add(int a, int b)
+{
+   int result = a + b;
+   return result;
+}
+
+int main()
+{
+   int x = 5;
+   int y = 10;
+   int sum = add(x, y); // x and y are passed by value
+
+   return 0;
+}
+```
+
+## Passing By Reference
+```c
+void add(int *a, int *b, int *result)
+{
+  
+  int A = *a; // A is now the same value of a passed in from the main function
+  int B = *b; // B is now the same value of b passed in from the main function
+  
+  *result = B + A;
+}
+
+int main()
+{
+   int x = 5;
+   int y = 10;
+   int sum = 0;
+
+   add(&x, &y, &sum);
+  
+   // 'sum' now is 15
+   
+   return 0;
+}
+```

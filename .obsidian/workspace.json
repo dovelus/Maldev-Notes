@@ -22,15 +22,17 @@
             }
           },
           {
-            "id": "70da54ef235fb529",
+            "id": "4711ee35a83eba1d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2025-03-06 14.15.13.excalidraw.md"
+                "file": "Module 4 - Coding Basics.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-03-06 14.15.13.excalidraw"
+              "icon": "lucide-file",
+              "title": "Module 4 - Coding Basics"
             }
           }
         ],
@@ -183,22 +185,25 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "70da54ef235fb529",
+  "active": "4711ee35a83eba1d",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-03-06 14.23.28.excalidraw.md",
-    "Excalidraw/Drawing 2025-03-06 14.15.13.excalidraw.md",
+    "Module 1 to 3 - Introduction to Malware Development.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Excalidraw/Drawing 2025-03-06 14.25.05.excalidraw.md",
     "Module 4 - Coding Basics.md",
+    "Excalidraw",
+    "Excalidraw/Drawing 2025-03-06 14.15.13.excalidraw.md",
+    "Excalidraw/Drawing 2025-03-06 14.23.28.excalidraw.md",
     "Excalidraw/Scripts/Downloaded/Elbow connectors.svg",
     "Excalidraw/Scripts/Downloaded/Elbow connectors.md",
     "Excalidraw/Scripts/Downloaded/Set background color of unclosed line object by adding a shadow clone.svg",
     "Excalidraw/Scripts/Downloaded/Set background color of unclosed line object by adding a shadow clone.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
-    "Excalidraw",
     "Intro to C/Intro to C - Part 1.md",
     "Windows C - Part 1.md",
     "Intro to C/Windows C - Part 2.md",
-    "Module 1 to 3 - Introduction to Malware Development.md",
     "Code/Intro/unions.c",
     "Code/Intro/enums.c",
     "Code/Intro/strucs.c",
