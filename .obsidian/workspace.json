@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Module 4 - Coding Basics"
             }
+          },
+          {
+            "id": "0a495b17012a7268",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-03-06 14.15.13.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-03-06 14.15.13.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,9 +183,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "961d7638abc8990f",
+  "active": "0a495b17012a7268",
   "lastOpenFiles": [
     "Module 4 - Coding Basics.md",
+    "Excalidraw/Drawing 2025-03-06 14.15.13.excalidraw.md",
+    "Excalidraw",
     "Intro to C/Intro to C - Part 1.md",
     "Windows C - Part 1.md",
     "Intro to C/Windows C - Part 2.md",
@@ -186,7 +201,6 @@
     "New folder",
     "Intro to C/main.c",
     "main.c",
-    "Excalidraw/Drawing 2025-03-03 17.57.12.excalidraw.md",
-    "Intro to C"
+    "Excalidraw/Drawing 2025-03-03 17.57.12.excalidraw.md"
   ]
 }
