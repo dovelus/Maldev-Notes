@@ -12,3 +12,13 @@ A processor inside a machine running the Windows operating system can operate un
 The image below shows an example of an application that creates a file. It begins with the user application calling the `CreateFile` WinAPI function which is available in `kernel32.dll`. `Kernel32.dll` is a critical DLL that exposes applications to the WinAPI and is therefore can be seen loaded by most applications. Next, `CreateFile` calls its equivalent NTAPI function, `NtCreateFile`, which is provided through `ntdll.dll`. `Ntdll.dll` then executes an assembly `sysenter` (x86) or `syscall` (x64) instruction, which transfers execution to kernel mode. The kernel `NtCreateFile` function is then used which calls kernel drivers and modules to perform the requested task.
 
 ![[windows-arch-flow.png]]
+### Function Call Flow Example
+
+This example shows the function call flow happening through a debugger. This is done by attaching a debugger to a binary that creates a file via the `CreateFileW` Windows API.
+
+The user application calls the `CreateFileW` WinAPI.
+
+![[createfilew-dbg.png]]
+
+Next, `CreateFileW` calls its equivalent NTAPI function, `NtCreateFile`.
+
