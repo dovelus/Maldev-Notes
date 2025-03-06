@@ -82,6 +82,7 @@ main(VOID)
 The enum or enumeration data type is used to define a set of named constants. To create an enumeration, the `enum` keyword is used, followed by the name of the enumeration and a list of identifiers, each of which represents a named constant. The compiler automatically assigns values to the constants, starting with 0 and increasing by 1 for each subsequent constant. In this course, enums can be seen representing the state of specific data, error codes or return values.
 
 An example of an enum is the list of "Weekdays" which contains 7 constants. In the example below, Monday has a value of 0, Tuesday has a value of 1, and so on. It's important to note that enum lists cannot be modified or accessed using the dot (.) operator. Instead, each element is accessed directly using its named constant value.
+
 ```c
 #include <Windows.h>
 #include <stdio.h>
@@ -135,4 +136,33 @@ main (VOID){
 }
 ```
 
-Some time 
+Some time we want that the enumeration starts from a precise  number to do so we can just initialize the first value with the start value of the Enum:
+
+```c
+enum Weekdays {
+    Monday = 1,         // 1 This will start from 1 not 0
+    Tuesday,        // 2
+    Wednesday,      // 3
+    Thursday,       // 4
+    Friday,         // 5
+    Saturday,       // 6
+    Sunday          // 7
+  };
+```
+
+## Union
+
+In the C programming language, a [Union](https://learn.microsoft.com/en-us/cpp/cpp/unions?view=msvc-170) is a data type that permits the storage of various data types in the same memory location. Unions provide an efficient way to use a single memory location for multiple purposes. Unions are not commonly used but can be seen in Windows-defined structures. The code below illustrates how to define a union in C:
+
+```c
+union ExampleUnion {
+   int    IntegerVar;
+   char   CharVar;
+   float  FloatVar;
+};
+```
+
+`ExampleUnion` can store `char`, `int` and `float` data types in the same memory location. To access the members of a union in C, one can use the dot operator, similar to that used for structures.
+
+> ![tip]
+> Immagine a union to a va
