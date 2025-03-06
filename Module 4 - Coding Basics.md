@@ -177,4 +177,13 @@ Bitwise operators are operators that manipulate the individual bits of a binary 
 - Bitwise XOR (`^`)
 - Bitwise NOT (`~`)
 
-To
+To see and on field example refer to [[Intro to C - Part 1#Bit wise operations use cases|This]]
+
+### Right and Left Shift
+The right shift (`>>`) and left shift (`<<`) operators are used to shift the bits of a binary number to the right and left by a specified number of positions, respectively.
+
+Shifting right discards the rightmost number of bits by the specified value and zero bits of the same amount are inserted into the left. For example, the image below shows `10100111` shifted right by `2`, to become `00101001`.
+
+
+
+On the other hand, shifting left discards the leftmost bits and the same number of zero bits are inserted from the right handside. For example, the image below shows `10100111` shifted left by `2`, to become `10011100`.
