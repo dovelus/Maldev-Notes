@@ -164,5 +164,17 @@ union ExampleUnion {
 
 `ExampleUnion` can store `char`, `int` and `float` data types in the same memory location. To access the members of a union in C, one can use the dot operator, similar to that used for structures.
 
-> ![tip]
-> Immagine a union to a va
+> [!tip]
+> Imagine a union to a variable that can hold a varied type of var, this is usefull for example when we accept a user input that can have multiple formats 
+
+
+## Bitwise operators
+Bitwise operators are operators that manipulate the individual bits of a binary value, performing operations on each corresponding bit position. The bitwise operators are shown below:
+- Right shift (`>>`)
+- Left shift (`<<`)
+- Bitwise OR (`|`)
+- Bitwise AND (`&`)
+- Bitwise XOR (`^`)
+- Bitwise NOT (`~`)
+
+To
