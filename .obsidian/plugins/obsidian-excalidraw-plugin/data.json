@@ -110,7 +110,31 @@
   "mdFontColor": "Black",
   "mdBorderColor": "Black",
   "mdCSS": "",
-  "scriptEngineSettings": {},
+  "scriptEngineSettings": {
+    "Downloaded/Set background color of unclosed line object by adding a shadow clone": {
+      "Background Color": {
+        "value": "DimGray",
+        "description": "Default background color of the 'shadow' object. Any valid html css color value"
+      },
+      "Fill Style": {
+        "value": "hachure",
+        "valueset": [
+          "hachure",
+          "cross-hatch",
+          "solid"
+        ],
+        "description": "Default fill style of the 'shadow' object."
+      },
+      "Inherit fill stroke width": {
+        "value": true,
+        "description": "This will impact the densness of the hachure or cross-hatch fill. Use the stroke width of the line object for which the shadow is created. If set to false, the script will use a stroke width of 2."
+      },
+      "Group 'shadow' with original": {
+        "value": true,
+        "description": "If the toggle is on then the shadow object that is created will be grouped with the unclosed original object."
+      }
+    }
+  },
   "defaultTrayMode": true,
   "previousRelease": "2.8.3",
   "showReleaseNotes": true,
@@ -119,7 +143,9 @@
   "latexPreambleLocation": "preamble.sty",
   "taskboneEnabled": false,
   "taskboneAPIkey": "",
-  "pinnedScripts": [],
+  "pinnedScripts": [
+    "Excalidraw/Scripts/Downloaded/Set background color of unclosed line object by adding a shadow clone.md"
+  ],
   "customPens": [
     {
       "type": "default",
