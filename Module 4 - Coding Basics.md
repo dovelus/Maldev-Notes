@@ -78,4 +78,61 @@ main(VOID)
 
 ---
 
-## ### Enumeration
+## Enumeration
+The enum or enumeration data type is used to define a set of named constants. To create an enumeration, the `enum` keyword is used, followed by the name of the enumeration and a list of identifiers, each of which represents a named constant. The compiler automatically assigns values to the constants, starting with 0 and increasing by 1 for each subsequent constant. In this course, enums can be seen representing the state of specific data, error codes or return values.
+
+An example of an enum is the list of "Weekdays" which contains 7 constants. In the example below, Monday has a value of 0, Tuesday has a value of 1, and so on. It's important to note that enum lists cannot be modified or accessed using the dot (.) operator. Instead, each element is accessed directly using its named constant value.
+```c
+#include <Windows.h>
+#include <stdio.h>
+#include <string.h>
+
+enum Weekdays {
+    Monday ,         // 0
+    Tuesday,        // 1
+    Wednesday,      // 2
+    Thursday,       // 3
+    Friday,         // 4
+    Saturday,       // 5
+    Sunday          // 6
+  };
+
+INT 
+main (VOID){
+
+    enum Weekdays EnumName = Tuesday;       // 4
+    printf("Val: %i\n", EnumName);
+    
+    // Check the value of "EnumName"
+    switch (EnumName){
+        case Monday:
+            printf("Today Is Monday !\n");
+            break;
+        case Tuesday:
+            printf("Today Is Tuesday !\n");
+            break;
+        case Wednesday:
+            printf("Today Is Wednesday !\n");
+            break;
+        case Thursday:
+            printf("Today Is Thursday !\n");
+            break;
+        case Friday:
+            printf("Today Is Friday !\n");
+            break;
+        case Saturday:
+            printf("Today Is Saturday !\n");
+            break;
+        case Sunday:
+            printf("Today Is Sunday !\n");
+            break;
+        default:
+        break;
+    }
+    
+    return ERROR_SUCCESS;
+
+}
+```
+
+Some time 
