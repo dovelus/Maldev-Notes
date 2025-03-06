@@ -22,3 +22,12 @@ The user application calls the `CreateFileW` WinAPI.
 
 Next, `CreateFileW` calls its equivalent NTAPI function, `NtCreateFile`.
 
+![[ntcreatefile-dbg.png]]
+
+Finally, the `NtCreateFile` function uses a `syscall` assembly instruction to transition from user mode to kernel mode. The kernel will then be the one that creates the file.
+
+![[syscall.png]]
+
+### Directly Invoking The Native API (NTAPI)
+
+It's important to note that applications can invoke syscalls (i.e. NTDLL functions) directly without having to go through the Windows API. The Windows API simply acts as a wrapper for the Native API. With that being said, the Native API is more difficult to use because it is not officially documented by Microsoft. Furthermore, Microsoft advises against the use of Native API functions because they can be changed at any time without warning.
