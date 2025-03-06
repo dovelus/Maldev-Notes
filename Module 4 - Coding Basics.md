@@ -43,3 +43,8 @@ This is different when initializing the structure pointer, `PSTRUCTURE_NAME`.
 PSTRUCTURE_NAME structpointer = NULL;
 ```
 
+Full code example:
+```embed-c
+PATH: Code\Intro\strucs.c
+TITLE: "Usage of Structs in"
+```
