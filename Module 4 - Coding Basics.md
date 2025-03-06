@@ -194,6 +194,7 @@ On the other hand, shifting left discards the leftmost bits and the same number 
 
 ## Passing By Value
 Passing by value is a method of passing arguments to a function where the argument is a copy of the object's value. This means that when an argument is passed by value, the value of the object is copied and the function can only modify its local copy of the object's value, not the original object itself.
+
 ```c
 int add(int a, int b)
 {
@@ -212,6 +213,8 @@ int main()
 ```
 
 ## Passing By Reference
+Passing by reference is a method of passing arguments to a function where the argument is a pointer to the object, rather than a copy of the object's value. This means that when an argument is passed by reference, the memory address of the object is passed instead of the value of the object. The function can then access and modify the object directly, without creating a local copy of the object.
+
 ```c
 void add(int *a, int *b, int *result)
 {
