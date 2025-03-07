@@ -133,3 +133,6 @@ int main()
     return 0;
 }
 ```
+> [!ip]
+> When using VirtualAlloc pay close attention to `flProtect`  and  `flAllocationType` and always refer to [https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc((MSDN VirtualAlloc)
+
