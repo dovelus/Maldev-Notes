@@ -26,3 +26,16 @@ When working with Windows processes, it's important to note whether the process 
 ### Allocating Memory Example
 
 This example goes through small code snippets to better understand how one can interact with Windows memory via C functions and Windows APIs. The first step in interacting with memory is allocating memory. The snippet below demonstrates several ways to allocate memory which is essentially reserving a memory inside the running process.
+
+```c
+// Allocating a memory buffer of *100* bytes
+
+// Method 1 - Using malloc()
+PVOID pAddress = malloc(100);
+
+// Method 2 - Using HeapAlloc()
+PVOID pAddress = HeapAlloc(GetProcessHeap(), 0, 100);
+
+// Method 3 - Using LocalAlloc()
+PVOID pAddress = LocalAlloc(LPTR, 100);
+```
