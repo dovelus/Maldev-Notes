@@ -57,3 +57,9 @@ CHAR* cString	= "MalDev Academy Is The Best";
 memcpy(pAddress, cString, strlen(cString));
 ```
 
+`HeapAlloc` uses the `HEAP_ZERO_MEMORY` flag which causes the allocated memory to be initialized to zero. The string is then copied to the allocated memory using `memcpy`. The last parameter in `memcpy` is the number of bytes to be copied. Next, recheck the buffer to verify that the data was successfully written.
+
+![[Pasted image 20250307142335.png]]
+
+Allocated memory content:
+
