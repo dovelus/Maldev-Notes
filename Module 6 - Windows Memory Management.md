@@ -39,3 +39,21 @@ PVOID pAddress = HeapAlloc(GetProcessHeap(), 0, 100);
 // Method 3 - Using LocalAlloc()
 PVOID pAddress = LocalAlloc(LPTR, 100);
 ```
+
+Memory allocation functions return the _base address_ which is simply a pointer to the beginning of the memory block that was allocated. Using the snippets above, `pAddress` will be the base address of the memory block that was allocated. Using this pointer several actions can be taken such as reading, writing, and executing. The type of actions that can be performed will depend on the protection assigned to the allocated memory region.
+
+The image below shows what `pAddress` looks like under the debugger.
+
+![[Pasted image 20250307142034.png]]
+### Write to memory 
+
+The next step after memory allocation is generally writing to that buffer. Several options can be used to write to memory but for this example, `memcpy` is used.
+
+```c
+PVOID pAddress	= HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, 100);
+
+CHAR* cString	= "MalDev Academy Is The Best";
+
+memcpy(pAddress, cString, strlen(cString));
+```
+
