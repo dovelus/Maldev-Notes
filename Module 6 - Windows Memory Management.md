@@ -91,3 +91,20 @@ int main()
 ```
 
 ### Freeing Allocated Memory
+### Freeing Allocated Memory
+
+When the application is done using an allocated buffer, it is highly recommended to deallocate or free the buffer to avoid [memory leaks](https://en.wikipedia.org/wiki/Memory_leak).
+
+Depending on what function was used to allocate memory, it will have a corresponding memory deallocation function. For example:
+
+- Allocating with `malloc` requires the use of the `free` function.
+- Allocating with `HeapAlloc` requires the use of the `HeapFree` function.
+- Allocating with `LocalAlloc` requires the use of the `LocalFree` function.
+
+The images below show `HeapFree` in action, freeing allocated memory at address `0000023ADE449900`. Notice the address `0000023ADE449900` still exists within the process but its original content was overwritten with random data. This new data is most likely due to a new allocation performed by the OS inside the process.
+![[memory-mgmt-424394866-a0dead3a-b72b-4600-8003-b8ecc2a27449.png]]![[memory-mgmt-524394895-7c747075-d866-4ca8-a15f-09cb4fec7e6d.png]]
+
+# Exercise: VirtualAlloc
+
+```
+```
