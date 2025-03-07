@@ -89,3 +89,5 @@ int main()
     return ERROR_SUCCESS;
 }
 ```
+
+### Freeing Allocated Memory
