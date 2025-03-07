@@ -63,3 +63,29 @@ memcpy(pAddress, cString, strlen(cString));
 
 Allocated memory content:
 
+![[Pasted image 20250307142507.png]]
+
+As you can see the content of the string was copied from the var memory location to the memory we allocated. 
+
+```c
+#include <Windows.h>
+#include <stdio.h>
+
+#define HEAP_ZERO_MEMORY 0x00000008
+
+int main()
+{
+    PVOID pAddress = HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, 100); // HEAP ZERO MEMEORY ALLOCATES THE MEMORY TO ALL 0
+    CHAR* cString = "MalDev Academy Is The Best"; // Poiter to the memory location of this string 
+
+    memcpy(pAddress, cString, strlen(cString));
+
+    printf("[+] Adress of the string: 0x%p \n", cString);
+    printf("[+] Base address of Allocated memory: 0x%p \n", pAddress);
+
+    printf("[#] Press <Enter> to Quit ...");
+    getchar();
+
+    return ERROR_SUCCESS;
+}
+```
