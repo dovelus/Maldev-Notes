@@ -106,5 +106,30 @@ The images below show `HeapFree` in action, freeing allocated memory at address 
 
 # Exercise: VirtualAlloc
 
-```
+```c
+#include <Windows.h>
+#include <stdio.h>
+#include <string.h>
+
+#define MB 1024*1024
+
+int main()
+{
+    PVOID pAddress = VirtualAlloc(NULL, MB, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
+
+    if (pAddress == NULL) {
+        printf("Failed to VirtualAlloc");
+        return 1;
+    }
+
+    CHAR* cString = "Maldev VirtualAlloc";
+
+    printf("Address of VirtualAlloc : 0x%p", pAddress);
+
+    memcpy(pAddress, cString, strlen(cString));
+
+    VirtualFree(pAddress, 0, MEM_RELEASE);
+    
+    return 0;
+}
 ```
