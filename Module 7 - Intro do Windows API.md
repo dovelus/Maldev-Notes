@@ -83,3 +83,14 @@ PVOID Pointer = malloc(100);
 // Pointer = Pointer + 10; // not allowed
 Pointer = (ULONG_PTR)Pointer + 10; // allowed
 ```
+### Data Types Pointers
+
+The Windows API allows a developer to declare a data type directly or a pointer to the data type. This is reflected in the data type names where the data types that start with "P" represent pointers to the actual data type while the ones that don't start with "P" represent the actual data type itself.
+
+This will become useful later when working with Windows APIs that have parameters that are pointers to a data type. The examples below show how the "P" data type relates to its non-pointer equivalent.
+
+- `PHANDLE` is the same as `HANDLE*`.
+    
+- `PSIZE_T` is the same as `SIZE_T*`.
+    
+- `PDWORD` is the same as `DWORD*`.
